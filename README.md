@@ -1,5 +1,7 @@
 # vue-quotes
 
+Simple project using vue.js framework and Bootstrap cdn that can create top ten quotes / citations.
+
 ## Project setup
 ```
 npm install
@@ -9,16 +11,8 @@ npm install
 ```
 npm run serve
 ```
+### Screenshots
 
-### Compiles and minifies for production
-```
-npm run build
-```
+![alt text](https://github.com/aymanebenhima/Make-Quotes-with-Vue.js/blob/master/src/assets/vue-quotes.png)
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![alt text](https://github.com/aymanebenhima/Make-Quotes-with-Vue.js/blob/master/src/assets/vue-quotes1.png)
