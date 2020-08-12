@@ -12,7 +12,7 @@ export default {
     },
     props: {
         quotes: {
-            type: String
+            type: Array
         }
     },
     methods: {

@@ -1,5 +1,9 @@
 <template>
   <div class="container">
+    <app-progress-bar
+      :quoteCount="quotes.length"
+      :maxQuotes="maxQuotes"
+    />
     <app-new-quote
       @quoteAdded="newQuote"
     />
@@ -18,11 +22,13 @@
 <script>
 import QuoteGrid from './components/QuoteGrid.vue'
 import NewQuote from './components/NewQuote.vue'
+import ProgressBar from './components/ProgressBar.vue'
 
 export default {
   components: {
     appQuoteGrid: QuoteGrid,
-    appNewQuote: NewQuote
+    appNewQuote: NewQuote,
+    appProgressBar: ProgressBar
   },
   data() {
     return {
@@ -34,6 +40,8 @@ export default {
   },
   methods: {
     newQuote(quote) {
+      if (this.quotes.length >= this.maxQuotes)
+        return alert('Please delete Quotes first!')
       this.quotes.push(quote)
     },
     deleteQuote(index) {
