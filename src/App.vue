@@ -1,16 +1,15 @@
 <template>
-  <div id="app" class="container">
-    <app-quote />
+  <div class="container">
+    <app-quote-grid :quotes="quotes" />
   </div>
 </template>
 
 <script>
-import Quote from './components/Quote.vue'
+import QuoteGrid from './components/QuoteGrid.vue'
 
 export default {
-  name: 'App',
   components: {
-    appQuote: Quote,
+    appQuoteGrid: QuoteGrid,
   },
   data() {
     return {
@@ -23,6 +22,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.container {
+  margin-top: 20px;
+}
 </style>
